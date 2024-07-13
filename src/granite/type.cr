@@ -15,6 +15,7 @@ module Granite::Type
     Float64 => ".read",
     Bool    => ".read",
     String  => ".read",
+    UUID    => ".read",
   }
 
   # :nodoc:
