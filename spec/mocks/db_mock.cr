@@ -28,6 +28,7 @@ class FakeConnection < DB::Connection
   def initialize
     @context = FakeContext.new
     @prepared_statements = false
+    @options = Options.new
   end
 
   def build_unprepared_statement(query) : FakeStatement
